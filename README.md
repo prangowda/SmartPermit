@@ -1,1 +1,3 @@
 # SmartPermit
+
+“SmartPermit” replaces manual processing between authorities such as the Corporation, District Commissioner's Office, and Police Station. Users can access the system through registration and efficiently apply for licenses, and permissions, or lodge complaints. Notifications are sent to users via a unique ID assigned to their phone number. The City The corporation receives and processes the online applications, involving the Police staff if needed. The system also allows the admin to manage the team and overall processes. This digitized approach eliminates the need for manual presence, paperwork, and submission of fraudulent documents
