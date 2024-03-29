@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.MunicipalHomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_25sdp">
+
+        <androidx.cardview.widget.CardView
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginHorizontal="@dimen/_9sdp"
+            android:id="@+id/slider3"
+            app:cardCornerRadius="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            app:cardPreventCornerOverlap="false"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_115sdp">
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/imageSlider3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:sliderAnimationDuration="600"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderAutoCycleEnabled="true"
+                app:sliderIndicatorAnimationDuration="600"
+                app:sliderIndicatorGravity="center|end"
+                app:sliderIndicatorMargin="@dimen/_12sdp"
+                app:sliderIndicatorOrientation="vertical"
+                app:sliderIndicatorPadding="@dimen/_3sdp"
+                app:sliderIndicatorRadius="@dimen/_2sdp"
+                app:sliderIndicatorSelectedColor="@color/themeColor"
+                app:sliderIndicatorUnselectedColor="@color/white"
+                app:sliderScrollTimeInSec="3"
+                app:sliderStartAutoCycle="true" />
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_marginTop="@dimen/_12sdp"
+            android:id="@+id/card1title1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/slider3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:text="Useful Links.."
+            android:textSize="18sp"
+            android:textAllCaps="true"
+            android:textColor="@color/themeColor"/>
+
+        <androidx.cardview.widget.CardView
+            app:layout_constraintTop_toBottomOf="@id/card1title1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="@dimen/_4sdp"
+            android:id="@+id/card11"
+            android:layout_height="@dimen/_115sdp"
+            app:cardBackgroundColor="#00000000"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:paddingHorizontal="@dimen/_12sdp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#9B30FF">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card4"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="License Request"
+                    android:textSize="30sp"
+                    android:textColor="@color/white"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_4sdp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expand"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/white"
+                    android:background="#00000000"
+                    android:padding="@dimen/_12sdp"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:layout_constraintTop_toBottomOf="@id/card11"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="@dimen/_18sdp"
+            app:cardCornerRadius="6dp"
+            android:id="@+id/card21"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_115sdp"
+            app:cardBackgroundColor="#00000000"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:paddingHorizontal="@dimen/_12sdp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f06595">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:padding="@dimen/_12sdp"
+                    android:text="Renew License"
+                    android:textColor="@color/white"
+                    android:textSize="27sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expand"
+                    android:background="#00000000"
+                    android:padding="@dimen/_12sdp"
+                    android:textColor="@color/white"
+                    android:layout_alignParentBottom="true"/>
+
+                <ImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card3"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:layout_constraintTop_toBottomOf="@id/card21"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="@dimen/_4sdp"
+            android:id="@+id/card31"
+            android:layout_height="@dimen/_115sdp"
+            app:cardBackgroundColor="#00000000"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:paddingHorizontal="@dimen/_12sdp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ff922b">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card2"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Permission"
+                    android:textSize="30sp"
+                    android:textColor="@color/white"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_4sdp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expand"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/white"
+                    android:background="#00000000"
+                    android:padding="@dimen/_12sdp"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:layout_constraintTop_toBottomOf="@id/card31"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="@dimen/_18sdp"
+            app:cardCornerRadius="6dp"
+            android:id="@+id/card41"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_115sdp"
+            app:cardBackgroundColor="#00000000"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:paddingHorizontal="@dimen/_12sdp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#51cf66">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:padding="@dimen/_12sdp"
+                    android:text="Complaint"
+                    android:textColor="@color/white"
+                    android:textSize="27sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expand"
+                    android:background="#00000000"
+                    android:padding="@dimen/_12sdp"
+                    android:textColor="@color/white"
+                    android:layout_alignParentBottom="true"/>
+
+                <ImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card1"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

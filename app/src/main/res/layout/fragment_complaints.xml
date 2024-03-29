@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ComplaintsFragment">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="3dp"
+        android:layout_marginBottom="@dimen/_50sdp">
+
+        <TextView
+            android:layout_marginTop="@dimen/_18sdp"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:id="@+id/com_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Complaints"
+            android:textColor="@color/themeColor"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:id="@+id/comtext"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/com_title"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Type"/>
+
+        <Spinner
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/comtext"
+            android:id="@+id/comtype"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_9sdp"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:background="@drawable/border"
+            android:entries="@array/complaint"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/comtype"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:id="@+id/com_head"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Complaint Title"
+            app:endIconMode="clear_text">
+
+            <EditText
+                android:padding="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/complaint_title"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/com_head"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:id="@+id/com_desc"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Description"
+            app:endIconMode="clear_text">
+
+            <EditText
+                android:gravity="top"
+                android:padding="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_75sdp"
+                android:id="@+id/complaint_description"
+                android:inputType="textMultiLine"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/com_desc"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:id="@+id/comname"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your Name"
+            app:endIconMode="clear_text">
+
+            <EditText
+                android:padding="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/complaint_name"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:id="@+id/com_number"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact Number"
+            app:endIconMode="clear_text"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/comname">
+
+            <EditText
+                android:padding="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:id="@+id/re_holder_contact"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/com_number"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:id="@+id/com_address"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Address"
+            app:endIconMode="clear_text">
+
+            <EditText
+                android:gravity="top"
+                android:padding="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_75sdp"
+                android:id="@+id/complaint_address"
+                android:inputType="textMultiLine"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/com_address"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:id="@+id/com_city"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter City"
+            app:endIconMode="clear_text">
+
+            <EditText
+                android:padding="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/complaint_city"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:id="@+id/com_pin"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter PIN Code"
+            app:endIconMode="clear_text"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/com_city">
+
+            <EditText
+                android:padding="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/complaint_pin"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:padding="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:id="@+id/complaint_submit"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/com_pin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/themeColor"
+        app:tint="@color/white"
+        android:id="@+id/viewcomplaints"
+        android:layout_gravity="top|end"
+        android:layout_margin="@dimen/_12sdp"
+        android:src="@drawable/ic_baseline_remove_red_eye_24"/>
+
+</FrameLayout>
+</ScrollView>

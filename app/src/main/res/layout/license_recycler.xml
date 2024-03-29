@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_12sdp"
+    android:background="@drawable/border"
+    android:layout_marginHorizontal="@dimen/_9sdp"
+    android:layout_marginBottom="@dimen/_12sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:textColor="@color/themeColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/license_num"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/license_dte"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/_6sdp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/license_typ"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/license_num"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/_6sdp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/license_nme"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/license_typ"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/_6sdp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/license_add"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/license_nme"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/_6sdp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/license_pne"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/license_add"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/_6sdp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/license_exp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/license_pne"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/_6sdp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/license_trd"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/license_exp"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/_6sdp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/license_sts"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/license_trd"/>
+
+    <TextView
+        android:drawablePadding="@dimen/_6sdp"
+        android:gravity="end|right"
+        android:layout_marginBottom="@dimen/_6sdp"
+        android:drawableTint="@color/themeColor"
+        app:drawableStartCompat="@drawable/ic_baseline_access_time_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/license_dte"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

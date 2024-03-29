@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdatePermissionActivity">
+    <TextView
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:id="@+id/upp_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Permission"
+        android:textColor="@color/themeColor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:id="@+id/upp_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:src="@drawable/update2"
+        android:scaleType="fitXY"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/upp_title"/>
+
+    <TextView
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:id="@+id/upptext"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/upp_image"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Status"/>
+
+    <Spinner
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/upptext"
+        android:id="@+id/upp_status"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_9sdp"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:background="@drawable/border"
+        android:entries="@array/permission_status"/>
+
+    <Button
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:padding="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:id="@+id/upp_submit"
+        android:onClick="btn_upcaz"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/upp_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:text="Update Now ->"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

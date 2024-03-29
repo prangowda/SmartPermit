@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.PermissionFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="3dp"
+            android:layout_marginBottom="@dimen/_50sdp">
+
+            <TextView
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginHorizontal="@dimen/_25sdp"
+                android:id="@+id/per_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Permissions"
+                android:textColor="@color/themeColor"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_marginHorizontal="@dimen/_25sdp"
+                android:id="@+id/pertext"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/per_title"
+                android:layout_marginTop="@dimen/_9sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose Type"/>
+
+            <Spinner
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pertext"
+                android:id="@+id/pertype"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_9sdp"
+                android:layout_marginHorizontal="@dimen/_25sdp"
+                android:background="@drawable/border"
+                android:entries="@array/permission"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginHorizontal="@dimen/_25sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pertype"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:id="@+id/perdesc"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Description"
+                app:endIconMode="clear_text">
+
+                <EditText
+                    android:gravity="top"
+                    android:padding="@dimen/_12sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_75sdp"
+                    android:id="@+id/permission_desc"
+                    android:inputType="textMultiLine"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <EditText
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/perdesc"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:id="@+id/datefrom"
+                android:layout_marginTop="@dimen/_9sdp"
+                android:layout_width="match_parent"
+                android:paddingVertical="@dimen/_12sdp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:paddingStart="@dimen/_15sdp"
+                android:layout_marginHorizontal="@dimen/_25sdp"
+                android:hint="Valid Form"/>
+
+            <EditText
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/datefrom"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:id="@+id/dateto"
+                android:layout_marginTop="@dimen/_9sdp"
+                android:layout_width="match_parent"
+                android:paddingVertical="@dimen/_12sdp"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_15sdp"
+                android:layout_marginHorizontal="@dimen/_25sdp"
+                android:background="@drawable/border"
+                android:hint="Valid To"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginHorizontal="@dimen/_25sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dateto"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:id="@+id/pername"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Name"
+                app:endIconMode="clear_text">
+
+                <EditText
+                    android:padding="@dimen/_12sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/permission_name"
+                    android:inputType="textPersonName"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginHorizontal="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:id="@+id/per_number"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact Number"
+                app:endIconMode="clear_text"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pername">
+
+                <EditText
+                    android:padding="@dimen/_12sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:id="@+id/permission_contact"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginHorizontal="@dimen/_25sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/per_number"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:id="@+id/peraddress"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Address"
+                app:endIconMode="clear_text">
+
+                <EditText
+                    android:gravity="top"
+                    android:padding="@dimen/_12sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_75sdp"
+                    android:id="@+id/permission_address"
+                    android:inputType="textMultiLine"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_marginHorizontal="@dimen/_25sdp"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:id="@+id/permi_submit"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/peraddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/themeColor"
+            app:tint="@color/white"
+            android:id="@+id/viewpermission"
+            android:layout_gravity="top|end"
+            android:layout_margin="@dimen/_12sdp"
+            android:src="@drawable/ic_baseline_remove_red_eye_24"/>
+
+    </FrameLayout>
+</ScrollView>

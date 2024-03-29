@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.RenewFragment">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="3dp"
+        android:layout_marginBottom="@dimen/_50sdp">
+
+        <TextView
+            android:layout_marginTop="@dimen/_18sdp"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:id="@+id/re_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Renew Licence"
+            android:textColor="@color/themeColor"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:id="@+id/retext"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/re_title"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Type"/>
+
+        <Spinner
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/retext"
+            android:id="@+id/retype"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_4sdp"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:background="@drawable/border"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:id="@+id/renumber"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="License Number"
+            app:endIconMode="clear_text"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/retype">
+
+            <EditText
+                android:padding="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapCharacters"
+                android:id="@+id/relicence_number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <EditText
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/renumber"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:id="@+id/redate"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:layout_width="match_parent"
+            android:paddingVertical="@dimen/_12sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:paddingStart="@dimen/_15sdp"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:hint="Expire Date"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/redate"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:id="@+id/rename"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="License Holder Name"
+            app:endIconMode="clear_text">
+
+            <EditText
+                android:padding="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relicence_holder_name"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:id="@+id/rec_number"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact Number"
+            app:endIconMode="clear_text"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rename">
+
+            <EditText
+                android:padding="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:id="@+id/re_holder_contact"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rec_number"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:id="@+id/readdress"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Address"
+            app:endIconMode="clear_text">
+
+            <EditText
+                android:gravity="top"
+                android:padding="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_75sdp"
+                android:id="@+id/relicence_holder_address"
+                android:inputType="textMultiLine"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/readdress"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:id="@+id/retrade"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Trade Address"
+            app:endIconMode="clear_text">
+
+            <EditText
+                android:gravity="top"
+                android:padding="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_75sdp"
+                android:id="@+id/retrade_address"
+                android:inputType="textMultiLine"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:padding="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:id="@+id/relicence_submit"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/retrade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/themeColor"
+        app:tint="@color/white"
+        android:id="@+id/viewrenew"
+        android:layout_gravity="top|end"
+        android:layout_margin="@dimen/_12sdp"
+        android:src="@drawable/ic_baseline_remove_red_eye_24"/>
+
+</FrameLayout>
+</ScrollView>

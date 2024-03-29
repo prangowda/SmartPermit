@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateRenewalActivity">
+    <TextView
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:id="@+id/upr_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Renewal Status"
+        android:textColor="@color/themeColor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:id="@+id/upr_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:src="@drawable/update2"
+        android:scaleType="fitXY"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/upr_title"/>
+
+    <EditText
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/upr_image"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:id="@+id/expdate2"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:layout_width="match_parent"
+        android:paddingVertical="@dimen/_12sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:paddingStart="@dimen/_15sdp"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:hint="Expire Date"/>
+
+    <TextView
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:id="@+id/uprtext"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/expdate2"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Status"/>
+
+    <Spinner
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/uprtext"
+        android:id="@+id/upr_status"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_9sdp"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:background="@drawable/border"
+        android:entries="@array/licence_status"/>
+
+    <Button
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:padding="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:id="@+id/upr_submit"
+        android:onClick="btn_upccc"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/upr_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:text="Update Now ->"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

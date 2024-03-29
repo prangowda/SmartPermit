@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">OCR For City Corporation</string>
+    <string name="alert_title">Please Wait..</string>
+    <string name="alert_message">Your task in progress..</string>
+    <string name="alert">Alert..!!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+
+    <string-array name="licence_status">
+        <item>---Choose Status----</item>
+        <item>Pending</item>
+        <item>Processing</item>
+        <item>Verified</item>
+        <item>Rejected</item>
+    </string-array>
+
+    <string-array name="permission_status">
+        <item>---Choose Status----</item>
+        <item>Pending</item>
+        <item>Approved</item>
+        <item>Rejected</item>
+    </string-array>
+
+    <string-array name="complaint_status">
+        <item>---Choose Status----</item>
+        <item>Pending</item>
+        <item>Cleared</item>
+    </string-array>
+
+    <string-array name="complaint">
+        <item>---Choose Type----</item>
+        <item>Social</item>
+        <item>Political</item>
+        <item>Enquiry</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="permission">
+        <item>--Choose Permission--</item>
+        <item>Social</item>
+        <item>Political</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="license">
+        <item>--Choose License--</item>
+        <item>Social</item>
+        <item>Political</item>
+        <item>Other</item>
+    </string-array>
+</resources>

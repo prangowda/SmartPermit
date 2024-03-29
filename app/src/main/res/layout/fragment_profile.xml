@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:paddingBottom="@dimen/_25sdp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="@dimen/_18sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/profiletext"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Profile"
+            android:textColor="@color/themeColor"
+            android:textSize="24sp"/>
+
+        <ImageView
+            android:id="@+id/profile_image"
+            app:layout_constraintTop_toBottomOf="@id/profiletext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_175sdp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:src="@drawable/profile_image"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/profile_image">
+            <TextView
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Name"
+                android:drawableTint="@color/themeColor"
+                android:textSize="21sp"
+                app:drawableStartCompat="@drawable/ic_baseline_person_24" />
+
+            <TextView
+                android:id="@+id/proname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N/A"
+                android:textSize="21sp"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Phone"
+                android:drawableTint="@color/themeColor"
+                android:textSize="21sp"
+                app:drawableStartCompat="@drawable/ic_baseline_phone_iphone_24" />
+
+            <TextView
+                android:id="@+id/prophone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N/A"
+                android:textSize="21sp"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Email"
+                android:drawableTint="@color/themeColor"
+                android:textSize="21sp"
+                app:drawableStartCompat="@drawable/ic_baseline_email_24" />
+
+            <TextView
+                android:id="@+id/poremail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N/A"
+                android:textSize="21sp"/>
+
+
+            <TextView
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Date"
+                android:drawableTint="@color/themeColor"
+                android:textSize="21sp"
+                app:drawableStartCompat="@drawable/ic_baseline_access_time_24" />
+
+            <TextView
+                android:id="@+id/pordate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N/A"
+                android:textSize="21sp"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Status"
+                android:drawableTint="@color/themeColor"
+                android:textSize="21sp"
+                app:drawableStartCompat="@drawable/ic_baseline_adjust_24" />
+
+            <TextView
+                android:id="@+id/porstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N/A"
+                android:textSize="21sp"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

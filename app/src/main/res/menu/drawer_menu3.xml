@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/homepage3"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home"/>
+
+        <item
+            android:id="@+id/plicense"
+            android:icon="@drawable/ic_baseline_credit_card_24"
+            android:title="License Request"/>
+
+        <item
+            android:id="@+id/prenew"
+            android:icon="@drawable/ic_baseline_credit_card_24"
+            android:title="Renew Licence"/>
+    </group>
+    <item
+        android:title="Others">
+        <menu>
+            <item
+                android:id="@+id/update3"
+                android:icon="@drawable/ic_baseline_settings_24"
+                android:title="Update Password"
+                android:checkable="true"/>
+            <item
+                android:id="@+id/profile3"
+                android:icon="@drawable/ic_baseline_person_24"
+                android:title="Profile"
+                android:checkable="true"/>
+            <item
+                android:id="@+id/logout3"
+                android:icon="@drawable/ic_baseline_power_settings_new_24"
+                android:title="Logout"
+                android:checkable="true"/>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "667296489726",
+    "project_id": "ocr-nexus",
+    "storage_bucket": "ocr-nexus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:667296489726:android:f854a6bab4db8173e345af",
+        "android_client_info": {
+          "package_name": "info.accolade.ocr_nexus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "667296489726-pjo4d6ikngggrai4rmju6ra8hlso1rhe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABQ8pVexFulIvP-X59bhgHA8-CBxK_l9o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "667296489726-pjo4d6ikngggrai4rmju6ra8hlso1rhe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
